@@ -8,8 +8,6 @@ class Piece (classe abstraite) :
         - die()
 
 Pour toutes les classes filles de Piece :
-    Attributs :
-        - forme
     Méthode :
         - move(xFinal, yFinal)
 
