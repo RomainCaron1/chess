@@ -1,0 +1,38 @@
+class Piece (classe abstraite) :
+    Attributs :
+        - x
+        - y
+        - couleur
+    Méthodes :
+        - take(Piece) : appelée dans move quand dx et dy == dx et dy d'un pion de l'autre couleur
+        - die()
+
+Pour toutes les classes filles de Piece :
+    Attributs :
+        - forme
+    Méthode :
+        - move(xFinal, yFinal)
+
+
+écouteur Observeur/Observable entre l'interface et le modèle
+
+while(Fou1.move(x, y) != 1)
+{ 
+    demande à l'utilisateur
+}
+
+méthode move {
+    foreach(tab.size) {
+        if position x = xFinal && position y = yfinal {
+
+        }
+    }
+    return 1 : vérif ok
+    return 0 : vérif pas ok
+}
+
+2 collections : Pour les pièces noires et pièces blanches
+1 tableau : Pour le plateau
+
+
+Gestion aléatoire joueur informatique
