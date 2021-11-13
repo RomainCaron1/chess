@@ -1,11 +1,12 @@
 package chess;
 
 public final class Knight extends Piece{
-    public Knight(int x, int y, String color) {
-        super(x, y, color, "cavalier");
+    public Knight(int l, int c, String color) {
+        super(l, c, color, "cavalier");
     }
 
     @Override
-    public void move(int newX, int newY) {
+    public boolean canBeMoved(int newC, int newL) {
+        return false;
     }
 }

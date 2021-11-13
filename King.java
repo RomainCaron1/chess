@@ -1,11 +1,12 @@
 package chess;
 
 public final class King extends Piece{
-    public King(int x, int y, String color) {
-        super(x, y, color, "roi");
+    public King(int l, int c, String color) {
+        super(l, c, color, "roi");
     }
 
     @Override
-    public void move(int newX, int newY) {
+    public boolean canBeMoved(int newC, int newL) {
+        return false;
     }
 }

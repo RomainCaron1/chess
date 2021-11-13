@@ -1,25 +1,25 @@
 package chess;
 
 public abstract class Piece {
-    protected int x;
-    protected int y;
+    protected int l;
+    protected int c;
     protected String color;
     protected String type;
     
-    public Piece(int x, int y, String color, String type) {
-        this.x = x;
-        this.y = y;
+    public Piece(int l, int c, String color, String type) {
+        this.l = l;
+        this.c = c;
         this.color = color;
         this.type = type;
     }
 
     //Getters & Setters
-    public int getX() {
-        return this.x;
+    public int getL() {
+        return this.l;
     }
 
-    public int getY() {
-        return this.y;
+    public int getC() {
+        return this.c;
     }
 
     public String getColor() {
@@ -38,6 +38,7 @@ public abstract class Piece {
         System.gc();
     }
 
-    public void move(int newX, int newY) {
+    public boolean canBeMoved(int newX, int newY) {
+        return false;
     }
 }

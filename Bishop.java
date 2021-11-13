@@ -1,11 +1,12 @@
 package chess;
 
 public final class Bishop extends Piece{
-    public Bishop(int x, int y, String color) {
-        super(x, y, color, "fou");
+    public Bishop(int l, int c, String color) {
+        super(l, c, color, "fou");
     }
 
     @Override
-    public void move(int newX, int newY) {
+    public boolean canBeMoved(int newC, int newL) {
+        return false;
     }
 }
