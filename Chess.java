@@ -34,7 +34,7 @@ public class Chess {
 
         if(pieces[1][0].canBeMoved(2, 0)) { //Est ce que le 1er pion de la 2e rangée peu avancer de 1 cases ?
             chessboard.updateChessBoard(pieces[1][0], 2, 0);
-            System.out.println(pieces[2][0].getType()); //Avant cette case était nulle, maintenant le pion a bougé donc la case contient le pion
+            System.out.println(pieces[2][0]); //Avant cette case était nulle, maintenant le pion a bougé donc la case contient le pion
         } else {
             System.out.println("Impossible !");
         }
@@ -44,6 +44,10 @@ public class Chess {
             System.out.println(pieces[3][0].getType());
         } else {
             System.out.println("Impossible !");
+        }
+
+        if(pieces[0][4].canBeMoved(1, 3)) { //Est ce que le roi noir peut bouger en diagonale en bas à gauche de 1 case ?
+            System.out.println("oui");
         }
 
     }
